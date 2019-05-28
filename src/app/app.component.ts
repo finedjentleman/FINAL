@@ -91,6 +91,7 @@ export class AppComponent  {
 
   //SMART TABLE
     settings = {
+    /*
     delete: {
       confirmDelete: true,
 
@@ -104,44 +105,62 @@ export class AppComponent  {
     edit: {
       confirmSave: true,
     },
-    columns: {
-      id: {
-        title: 'ID',
+    */
+      columns: {
+        /*
+        id: {
+          title: 'ID',
+        },
+        name: {
+          title: 'Full Name',
+        },
+        username: {
+          title: 'User Name',
+        },
+        email: {
+          title: 'Email',
+        },
+        */
+        tool: {
+          title: 'TOOL',
+        },
+        incident: {
+          title: 'INCIDENT',
+        },
+        assignee: {
+          title: 'ASSIGNEE'
+        },
+        sme: {
+          title: 'SME'
+        },
+        /*
+        reason: {
+          title: 'REASON'
+        },
+        */
       },
-      name: {
-        title: 'Full Name',
-      },
-      username: {
-        title: 'User Name',
-      },
-      email: {
-        title: 'Email',
-      },
-    },
-  };
+    };
 
   data = [
     {
-      id: 1,
-      name: "Leanne Graham",
-      username: "Bret",
-      email: "Sincere@april.biz"
+      tool: 'AT',
+      incident: "INC512",
+      assignee: "Red Tomato",
+      sme: "More Red Tomato"
     },
     {
-      id: 2,
-      name: "Ervin Howell",
-      username: "Antonette",
-      email: "Shanna@melissa.tv"
+      tool: 'BAT',
+      incident: "INC434",
+      assignee: "Brown Potato",
+      sme: "More Brown Potato"
     },
-
-    // ... list of items
-
     {
-      id: 11,
-      name: "Nicholas DuBuque",
-      username: "Nicholas.Stanton",
-      email: "Rey.Padberg@rosamond.biz"
-    }
+      tool: 'CAT',
+      incident: "REQ1100",
+      assignee: "White Onion",
+      sme: "More White Onion"
+    },
+    
   ];
 
   onDeleteConfirm(event) {
