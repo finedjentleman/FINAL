@@ -8,6 +8,9 @@ import { DaysChartComponent } from './days-chart/days-chart.component';
 import { ToolsChartComponent } from './tools-chart/tools-chart.component';
 import { AssigneesChartComponent } from './assignees-chart/assignees-chart.component';
 
+//reading JSON
+import { JsonReaderComponent } from './json-reader/json-reader.component';
+
 //charts and tables
 import { ChartsModule } from 'ng2-charts';
 import { Ng2SmartTableModule } from 'ng2-smart-table';
@@ -18,7 +21,12 @@ import { Ng2SmartTableModule } from 'ng2-smart-table';
     ChartsModule,
     Ng2SmartTableModule
     ],
-  declarations: [ AppComponent ],
+  declarations: [ AppComponent,
+    JsonReaderComponent,
+    DaysChartComponent,
+    ToolsChartComponent,
+    AssigneesChartComponent
+    ],
   bootstrap:    [ AppComponent ]
 })
 export class AppModule { }
