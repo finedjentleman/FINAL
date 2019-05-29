@@ -1,3 +1,5 @@
+//Reads data from '../../assets/SampleJson.json'
+
 import { Component, OnInit } from '@angular/core';
 import SampleJson from '../../assets/SampleJson.json';
 

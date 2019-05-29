@@ -13,23 +13,24 @@ export class AssigneesChartComponent{
   public lineChartType = 'line';  
     
   public SystemName1: string = "No. of cases assigned";
-  //public SystemName2: string = "No. of escalations made";
+  public SystemName2: string = "No. of escalations made";
 
   firstCopy = false;
   
   public lineChartData1: Array<number> = [ 1,8,49,50,51,15];
-  //public lineChartData2: Array<number> = [ 2, 6, 15, 4, 19, 23];
+  public lineChartData2: Array<number> = [ 19, 12, 15, 34, 31, 11];
 
   public labelMFL: Array<any> = [
       { data: this.lineChartData1,
         label: this.SystemName1
       },
-      /*
+      
       { data: this.lineChartData2,
         label: this.SystemName2
       },
-      */
+      
   ];
+
   // labels
   //it should show the names of cases associated with each assignee
   //so each should hold the array of test cases assigned to it

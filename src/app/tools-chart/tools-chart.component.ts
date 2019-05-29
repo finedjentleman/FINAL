@@ -8,7 +8,7 @@ import { Component } from '@angular/core';
 
 export class ToolsChartComponent{
   
-  public pieChartLabels: string[] = ["A1", "A2", "A3", "A4", "A5", "A6"];
+  public pieChartLabels: string[] = ["Tool1", "Tool2", "Tool3", "Tool4", "Tool5", "Tool6"];
   public pieChartData: number[] = [13, 10, 25, 20, 4, 19];
   public pieChartType: string = 'pie';
   public pieChartOptions: any = {
