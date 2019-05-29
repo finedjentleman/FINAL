@@ -16,6 +16,8 @@ import { JsonReaderComponent } from './json-reader/json-reader.component';
 import { ChartsModule } from 'ng2-charts';
 import { Ng2SmartTableModule } from 'ng2-smart-table';
 
+
+
 @NgModule({
   imports:      [
     BrowserModule, FormsModule,
