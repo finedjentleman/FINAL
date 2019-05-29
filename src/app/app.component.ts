@@ -11,8 +11,8 @@ export class AppComponent  {
   title = "App";
   
   //PIE CHART!
-  public pieChartLabels: string[] = ["Pending", "InProgress", "OnHold", "Complete", "Cancelled"];
-  public pieChartData: number[] = [21, 39, 10, 14, 16];
+  public pieChartLabels: string[] = ["Less than 5 days", "Less than 15 days", "Less than 30 days", "More than 30 days"];
+  public pieChartData: number[] = [21, 39, 10, 14];
   public pieChartType: string = 'pie';
   public pieChartOptions: any = {
     'backgroundColor': [
@@ -37,10 +37,11 @@ export class AppComponent  {
 
 //LINE CHART!
 
-  public SystemName: string = "MF1";
+  public SystemName: Array<string> = ["No. of cases assigned","Another"];
   firstCopy = false;
   
-  public lineChartData: Array<number> = [ 1,8,49,50,51];
+  //this will hold the number of cases assigned to each
+  public lineChartData: Array<number> = [ 1,8,49,50,51,15];
 
   public labelMFL: Array<any> = [
       { data: this.lineChartData,
@@ -48,10 +49,13 @@ export class AppComponent  {
       }
   ];
   // labels
+  //it should show the names of cases associated with each assignee
+  //so each should hold the array of test cases assigned to it
   public lineChartLabels: Array<any> = ["2018-01-29 10:00:00", "2018-01-29 10:27:00", "2018-01-29 10:28:00", "2018-01-29 10:29:00", "2018-01-29 10:30:00" ];
 
   constructor(  ) { }
-
+  
+  //store the maximum and assign to max
   public lineChartOptions: any = {
     responsive: true,
     scales : {
@@ -62,18 +66,8 @@ export class AppComponent  {
         }
       }],
       xAxes: [{
-        min: '2018-01-29 10:08:00', // how to? 
-      //  max: '2018-01-29 10:48:00', // how to?
-        type: 'time',
-        time: {        
-          unit: 'minute',
-          unitStepSize: 10,
-          displayFormats: {
-            'second': 'HH:mm:ss',
-            'minute': 'HH:mm:ss',
-            'hour': 'HH:mm',
-          },
-        },
+          type: 'category',
+          labels:['A1', 'A2', 'A3', 'A4', 'A5', 'A6']
         }],
     },
   };
@@ -184,6 +178,16 @@ export class AppComponent  {
     console.log(event);
   }
 
+  //chart
 
+  chartOptions = {
+    responsive: true
+  };
+
+  chartData = [
+    { data: [330, 600, 260, 700], label: 'Account A' },
+    { data: [120, 455, 100, 340], label: 'Account B' },
+    { data: [45, 67, 800, 500], label: 'Account C' }
+  ];
 
 }
