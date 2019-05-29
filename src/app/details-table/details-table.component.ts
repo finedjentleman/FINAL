@@ -31,17 +31,56 @@ export class DetailsTableComponent{
       confirmSave: true,
     },
     */
+      
+      actions: {
+        add : false,
+        edit: false,
+        delete: false,
+      },
+      
       columns: {
         
         tool: {
           title: 'TOOL',
+          filter: {
+            type: 'list',
+            config: {
+              selectText: 'Select...',
+              list: [
+                { value: 'AT', title: 'AT'}, // this includes 'bat', 'cat'
+                { value: 'BAT', title: 'BAT'},
+                { value: 'CAT', title: 'CAT'},
+
+                
+              ],
+            },
+          },
+          sort: true,
+          sortDirection: 'asc',
         },
+
         incident: {
           title: 'INCIDENT',
         },
+
         assignee: {
-          title: 'ASSIGNEE'
+          title: 'ASSIGNEE',
+          filter: {
+            type: 'list',
+            config: {
+              selectText: 'Select...',
+              list: [
+                
+                { value: 'Brown Potato', title: 'Brown Potato'},
+                { value: 'Red Tomato', title: 'Red Tomato'},
+                { value: 'White Onion', title: 'White Onion'},
+              ],
+            },
+          },
+          sort: true,
+          sortDirection: 'asc',
         },
+
         sme: {
           title: 'SME'
         },
@@ -95,5 +134,7 @@ export class DetailsTableComponent{
     console.log("Edit Event In Console")
     console.log(event);
   }
+
+  
 
 }
