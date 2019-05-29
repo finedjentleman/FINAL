@@ -1,13 +1,12 @@
-<div class="container">
-  <div class="col-sm-4 text-center">
-    <h2 class="text-center">Assignees Vs No. of Cases</h2>
-    <canvas baseChart
-          [data]="pieChartData"
-          [labels]="pieChartLabels"
-          [chartType]="pieChartType"
-          [options]="pieChartOptions"
-          (chartHover)="chartHovered($event)"
-          (chartClick)="chartClicked($event)">
-    </canvas>
-  </div>
+<div style="display: block;" class="chart">
+      <h2 class="text-center">Assignees Vs Number of Cases</h2>
+      <canvas baseChart
+              
+              [datasets]="labelMFL"
+              [labels]="lineChartLabels"
+              [options]="lineChartOptions"
+              [chartType]="lineChartType"
+              (chartHover)="chartHovered($event)"
+              (chartClick)="chartClicked($event)">
+      </canvas>
 </div>
