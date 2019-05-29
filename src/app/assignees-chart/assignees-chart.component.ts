@@ -17,7 +17,6 @@ export class AssigneesChartComponent{
 
   firstCopy = false;
   
-  //this will hold the number of cases assigned to each
   public lineChartData1: Array<number> = [ 1,8,49,50,51,15];
   //public lineChartData2: Array<number> = [ 2, 6, 15, 4, 19, 23];
 
