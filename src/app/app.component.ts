@@ -12,15 +12,6 @@ export class AppComponent  {
   
   //PIE CHART!
   
-  // events on slice click
-  public chartClicked(e:any):void {
-    console.log(e);
-  }
- 
-  // event on pie chart slice hover
-  public chartHovered(e:any):void {
-    console.log(e);
-  }
 
 //LINE CHART!
 
