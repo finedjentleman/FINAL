@@ -7,6 +7,10 @@ import { Component } from '@angular/core';
 })
 
 export class ToolsChartComponent{
+  
+
+  public lineChartType = 'line';  
+    
   public SystemName: string = "No. of cases assigned";
   firstCopy = false;
   
@@ -51,6 +55,5 @@ export class ToolsChartComponent{
         pointHoverBorderColor: 'red' 
       }];
 
-  public lineChartType = 'line';  
 
 }
