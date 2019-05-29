@@ -30,7 +30,6 @@ export class AssigneesChartComponent{
 
   constructor(  ) { }
   
-  //store the maximum and assign to max
   public lineChartOptions: any = {
     responsive: true,
     scales : {

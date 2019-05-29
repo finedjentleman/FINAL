@@ -8,6 +8,9 @@ import SampleJson from '../../assets/SampleJson.json';
 })
 
 export class JsonReaderComponent{
+  
+  list: string[] = [];
+  //loop over json data and store it inside the list array
 
   constructor(){
     console.log('Reading local json files.');
