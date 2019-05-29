@@ -11,6 +11,9 @@ export class AppComponent  {
   title = "App";
   
   //PIE CHART!
+  
+  //days: number[] = [21, 39, 10, 14];
+  
   public pieChartLabels: string[] = ["Less than 5 days", "Less than 15 days", "Less than 30 days", "More than 30 days"];
   public pieChartData: number[] = [21, 39, 10, 14];
   public pieChartType: string = 'pie';
@@ -20,7 +23,7 @@ export class AppComponent  {
       "#4BC0C0",
       "#FFCE56",
       "#E7E9ED",
-      "#36A2EB"
+      "#36A2EB",
     ]
   }
   
@@ -37,7 +40,7 @@ export class AppComponent  {
 
 //LINE CHART!
 
-  public SystemName: Array<string> = ["No. of cases assigned","Another"];
+  public SystemName: string = "No. of cases assigned";
   firstCopy = false;
   
   //this will hold the number of cases assigned to each

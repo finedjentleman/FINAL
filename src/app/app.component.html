@@ -1,31 +1,6 @@
+<assignees-chart></assignees-chart>
 
-<div class="container">
-  <div class="col-sm-4 text-center">
-    <h2 class="text-center">PIE chart 1</h2>
-    <canvas baseChart
-          [data]="pieChartData"
-          [labels]="pieChartLabels"
-          [chartType]="pieChartType"
-          [options]="pieChartOptions"
-          (chartHover)="chartHovered($event)"
-          (chartClick)="chartClicked($event)"></canvas>
-      </div>
-</div>
-
-
-<div class="container">
-  <div class="col-sm-4 text-center">
-    <h2 class="text-center">PIE chart 2</h2>
-    <canvas baseChart
-          [data]="pieChartData"
-          [labels]="pieChartLabels"
-          [chartType]="pieChartType"
-          [options]="pieChartOptions"
-          (chartHover)="chartHovered($event)"
-          (chartClick)="chartClicked($event)"></canvas>
-      </div>
-</div>
-
+<days-chart></days-chart>
 
 <div style="display: block;" class="chart">
       <canvas baseChart
