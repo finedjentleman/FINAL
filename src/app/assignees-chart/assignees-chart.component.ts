@@ -38,7 +38,10 @@ export class AssigneesChartComponent{
         ticks: {
           max : 60,
           min : 0,
-        }
+        },
+        gridLines: {
+            color: 'rgba(255,0,0,0.3)',
+        },
       }],
       xAxes: [{
           type: 'category',
