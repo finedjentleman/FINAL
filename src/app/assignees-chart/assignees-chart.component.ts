@@ -59,4 +59,12 @@ export class AssigneesChartComponent{
         pointHoverBorderColor: 'red' 
       }];
 
+  public chartClicked({ event, active }: { event: MouseEvent, active: {}[] }): void {
+    console.log(event, active);
+  }
+
+  public chartHovered({ event, active }: { event: MouseEvent, active: {}[] }): void {
+    console.log(event, active);
+  }
+
 }
