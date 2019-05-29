@@ -55,12 +55,12 @@ export class DetailsTableComponent{
               ],
             },
           },
-          sort: true,
-          sortDirection: 'asc',
         },
 
         incident: {
           title: 'INCIDENT',
+          sort: true,
+          sortDirection: 'asc',
         },
 
         assignee: {
@@ -77,12 +77,10 @@ export class DetailsTableComponent{
               ],
             },
           },
-          sort: true,
-          sortDirection: 'asc',
         },
 
         sme: {
-          title: 'SME'
+          title: 'SME',
         },
         /*
         reason: {
@@ -114,6 +112,7 @@ export class DetailsTableComponent{
     
   ];
 
+  /*
   onDeleteConfirm(event) {
     console.log("Delete Event In Console")
     console.log(event);
@@ -134,7 +133,10 @@ export class DetailsTableComponent{
     console.log("Edit Event In Console")
     console.log(event);
   }
-
-  
+  */
+  onMouseOver(event){
+    //show the hyperlink to the id
+    console.log("Mouse over: " + this.data[event].tool);
+  }
 
 }
