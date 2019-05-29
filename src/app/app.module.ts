@@ -17,19 +17,28 @@ import { ChartsModule } from 'ng2-charts';
 import { Ng2SmartTableModule } from 'ng2-smart-table';
 
 
+//materials
+import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
+import { CardToolsComponent } from './card-tools/card-tools.component';
+import {MatCardModule} from '@angular/material/card';
 
 @NgModule({
   imports:      [
     BrowserModule, FormsModule,
     ChartsModule,
-    Ng2SmartTableModule
+    Ng2SmartTableModule,
+    
+    BrowserAnimationsModule,
+    MatCardModule
     ],
   declarations: [ AppComponent,
     JsonReaderComponent,
     DaysChartComponent,
     ToolsChartComponent,
     AssigneesChartComponent,
-    DetailsTableComponent
+    DetailsTableComponent,
+    
+    CardToolsComponent
     ],
   bootstrap:    [ AppComponent ]
 })
