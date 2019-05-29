@@ -12,16 +12,24 @@ export class AssigneesChartComponent{
 
   public lineChartType = 'line';  
     
-  public SystemName: string = "No. of cases assigned";
+  public SystemName1: string = "No. of cases assigned";
+  //public SystemName2: string = "No. of escalations made";
+
   firstCopy = false;
   
   //this will hold the number of cases assigned to each
-  public lineChartData: Array<number> = [ 1,8,49,50,51,15];
+  public lineChartData1: Array<number> = [ 1,8,49,50,51,15];
+  //public lineChartData2: Array<number> = [ 2, 6, 15, 4, 19, 23];
 
   public labelMFL: Array<any> = [
-      { data: this.lineChartData,
-        label: this.SystemName
-      }
+      { data: this.lineChartData1,
+        label: this.SystemName1
+      },
+      /*
+      { data: this.lineChartData2,
+        label: this.SystemName2
+      },
+      */
   ];
   // labels
   //it should show the names of cases associated with each assignee
