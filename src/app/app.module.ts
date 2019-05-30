@@ -28,7 +28,7 @@ import { CardAssigneesComponent } from './card-assignees/card-assignees.componen
 import { CardTableComponent } from './card-table/card-table.component';
 
 //primeng
-import {TabViewModule} from 'primeng/tabview';
+import {TabViewModule} from 'primeng/primeng';
 
 @NgModule({
   imports:      [
@@ -51,7 +51,9 @@ import {TabViewModule} from 'primeng/tabview';
     CardToolsComponent,
     CardDaysComponent,
     CardAssigneesComponent,
-    CardTableComponent
+    CardTableComponent,
+
+    TabviewToolsComponent
     ],
   bootstrap:    [ AppComponent ]
 })
