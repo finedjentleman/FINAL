@@ -1,9 +1,26 @@
 <mat-grid-list cols="4" rowHeight="100px">
   <mat-grid-tile
-      *ngFor="let tile of tiles"
-      [colspan]="tile.cols"
-      [rowspan]="tile.rows"
-      [style.background]="tile.color">
-    <{{id}}></{{id}}>
+      colspan="2"
+      rowspan="4"
+      >
+    <card-days></card-days>
+  </mat-grid-tile>
+  <mat-grid-tile
+      colspan="2"
+      rowspan="4"
+      >
+    <card-tools></card-tools>
+  </mat-grid-tile>
+  <mat-grid-tile
+      colspan="2.7"
+      rowspan="4"
+      >
+    <card-assignees></card-assignees>
+  </mat-grid-tile>
+  <mat-grid-tile
+      colspan="3"
+      rowspan="4"
+      >
+    <card-table></card-table>
   </mat-grid-tile>
 </mat-grid-list>
