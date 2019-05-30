@@ -19,8 +19,15 @@ import { Ng2SmartTableModule } from 'ng2-smart-table';
 
 //materials
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
-import { CardToolsComponent } from './card-tools/card-tools.component';
 import {MatCardModule} from '@angular/material/card';
+
+//card components
+import { CardToolsComponent } from './card-tools/card-tools.component';
+import { CardDaysComponent } from './card-days/card-days.component';
+import { CardAssigneesComponent } from './card-assignees/card-assignees.component';
+import { CardTableComponent } from './card-table/card-table.component';
+
+
 
 @NgModule({
   imports:      [
@@ -38,7 +45,10 @@ import {MatCardModule} from '@angular/material/card';
     AssigneesChartComponent,
     DetailsTableComponent,
     
-    CardToolsComponent
+    CardToolsComponent,
+    CardDaysComponent,
+    CardAssigneesComponent,
+    CardTableComponent
     ],
   bootstrap:    [ AppComponent ]
 })
