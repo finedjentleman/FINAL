@@ -42,7 +42,7 @@ export class AppComponent  {
         }
 
         //3 X Dictionary
-        //For Tools, Days, Assignee
+        //For Tools, Days, Assignees
         /*
         {
           Key:{Set1,Set2,Set3},
@@ -54,18 +54,14 @@ export class AppComponent  {
           [Tool2]: {{Total2},{Inc2},{Req2}},
           [Tooln]: {{Totaln},{Incn},{Reqn}},
         }
+
+        EG.- ToolsDict['ToolName'][1] returns the set showing the INC for that tool
         */
+        
         let ToolsDict: any;
         let DaysDict: any;
         let AssigneesDict: any;
         
-        for(let i =0 ;i < this.A.length ;i++){
-          let resource = data[i];
-          if(ToolMap.has(resource["tool"]){
-
-          })
-        }
-
         //iterate, and if the entry is in the map, add the 
 
 
