@@ -33,12 +33,45 @@ export class AppComponent  {
       {
         this.A = data;
         //this.A holds the values now!
-        for(let i =0;i<this.A.length;i++){
+        
+        let l = this.A.length;// l stores the length of the data array
+
+        for(let i =0 ;i < this.A.length ;i++){
           let resource = data[i];
           console.log(resource["assignee"]);
         }
 
-        //make use of MAP now
+        //3 X Dictionary
+        //For Tools, Days, Assignee
+        /*
+        {
+          Key:{Set1,Set2,Set3},
+          Key:{Set1,Set2,Set3},
+        }
+
+        {
+          [Tool1]: {{Total1},{Inc1},{Req1}}},
+          [Tool2]: {{Total2},{Inc2},{Req2}},
+          [Tooln]: {{Totaln},{Incn},{Reqn}},
+        }
+        */
+        let ToolsDict: any;
+        let DaysDict: any;
+        let AssigneesDict: any;
+        
+        for(let i =0 ;i < this.A.length ;i++){
+          let resource = data[i];
+          if(ToolMap.has(resource["tool"]){
+
+          })
+        }
+
+        //iterate, and if the entry is in the map, add the 
+
+
+
+
+
       }
     );
 
