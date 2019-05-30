@@ -4,10 +4,10 @@ import { FormsModule } from '@angular/forms';
 
 //components
 import { AppComponent } from './app.component';
-import { DaysChartComponent } from './chart-days/chart-days.component';
-import { ToolsChartComponent } from './chart-tools/chart-tools.component';
-import { AssigneesChartComponent } from './chart-assignees/chart-assignees.component';
-import { DetailsTableComponent } from './table-details/table-details.component';
+import { ChartDaysComponent } from './chart-days/chart-days.component';
+import { ChartToolsComponent } from './chart-tools/chart-tools.component';
+import { ChartAssigneesComponent } from './chart-assignees/chart-assignees.component';
+import { TableDetailsComponent } from './table-details/table-details.component';
 
 //reading JSON
 import { JsonReaderComponent } from './json-reader/json-reader.component';
@@ -43,7 +43,7 @@ import { CardTableComponent } from './card-table/card-table.component';
     ChartDaysComponent,
     ChartToolsComponent,
     ChartAssigneesComponent,
-    DetailsTableComponent,
+    TableDetailsComponent,
     
     CardToolsComponent,
     CardDaysComponent,
