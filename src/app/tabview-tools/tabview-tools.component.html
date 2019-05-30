@@ -1,15 +1,17 @@
 <p-tabView orientation="top">
-    <p-tabPanel header="Header 1" [selected]="true>
-      TOTAL
+    <p-tabPanel header="TOTAL" [selected]="true>
+      <chart-tools></chart-tools>
     </p-tabPanel>
-    <p-tabPanel header="Header 2">
+
+    <p-tabPanel header="INCIDENTS">
       <ng-template pTemplate="content">
-        INCIDENTS
+        
       </ng-template>
     </p-tabPanel>
-    <p-tabPanel header="Header 3">
+    
+    <p-tabPanel header="REQUESTS">
       <ng-template pTemplate="content">
-        REQUESTS
+        
       </ng-template>
     </p-tabPanel>
 </p-tabView>
