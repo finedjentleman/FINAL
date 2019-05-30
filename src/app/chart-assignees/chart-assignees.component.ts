@@ -1,12 +1,12 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'assignees-chart',
-  templateUrl: './assignees-chart.component.html',
-  //styleUrls: ['./assignees-chart.component.css']
+  selector: 'chart-assignees',
+  templateUrl: './chart-assignees.component.html',
+  //styleUrls: ['./chart-assignees.component.css']
 })
 
-export class AssigneesChartComponent{
+export class ChartAssigneesComponent{
   
   
 

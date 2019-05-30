@@ -1,12 +1,12 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'details-table',
-  templateUrl: './details-table.component.html',
-  styleUrls: ['./details-table.component.css']
+  selector: 'table-details',
+  templateUrl: './table-details.component.html',
+  styleUrls: ['./table-details.component.css']
 })
 
-export class DetailsTableComponent{
+export class TableDetailsComponent{
 
   constructor(){
   }

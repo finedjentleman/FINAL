@@ -1,14 +1,15 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'days-chart',
-  templateUrl: './days-chart.component.html',
-  //styleUrls: ['./days-chart.component.css']
+  selector: 'chart-tools',
+  templateUrl: './chart-tools.component.html',
+  styleUrls: ['./chart-tools.component.css']
 })
 
-export class DaysChartComponent{
-  public pieChartLabels: string[] = ["Less than 5 days", "Less than 15 days", "Less than 30 days", "More than 30 days"];
-  public pieChartData: number[] = [21, 39, 10, 14];
+export class ChartToolsComponent{
+  
+  public pieChartLabels: string[] = ["Tool1", "Tool2", "Tool3", "Tool4", "Tool5", "Tool6"];
+  public pieChartData: number[] = [13, 10, 25, 20, 4, 19];
   public pieChartType: string = 'pie';
   public pieChartOptions: any = {
     'backgroundColor': [
@@ -30,5 +31,7 @@ export class DaysChartComponent{
   public chartHovered(e:any):void {
     console.log(e);
   }
+
+  
 
 }
