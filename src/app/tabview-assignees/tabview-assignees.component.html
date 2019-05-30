@@ -1,0 +1,17 @@
+<p-tabView>
+    <p-tabPanel header="TOTAL" [selected]="true">
+      <chart-assignees></chart-assignees>
+    </p-tabPanel>
+
+    <p-tabPanel header="INCIDENTS">
+      <ng-template pTemplate="content">
+        <chart-assignees></chart-assignees>
+      </ng-template>
+    </p-tabPanel>
+
+    <p-tabPanel header="REQUESTS">
+      <ng-template pTemplate="content">
+        <chart-assignees></chart-assignees>
+      </ng-template>
+    </p-tabPanel>
+</p-tabView>
