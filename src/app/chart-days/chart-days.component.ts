@@ -17,7 +17,9 @@ export class ChartDaysComponent{
       "#FFCE56",
       "#E7E9ED",
       "#36A2EB",
-    ]
+    ],
+    //LEGEND POSITION
+    legend: {position: 'bottom'}
   }
   
   
