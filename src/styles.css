@@ -1,3 +1,7 @@
 /* Add application styles & imports to this file! */
 @import "primeng/resources/primeng.min.css";
 @import "primeng/resources/themes/nova-dark/theme.css"
+
+/*
+card-title{ font-family: "Helvetica"; }
+*/
