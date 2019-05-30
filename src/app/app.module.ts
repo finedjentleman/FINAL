@@ -28,17 +28,18 @@ import { CardAssigneesComponent } from './card-assignees/card-assignees.componen
 import { CardTableComponent } from './card-table/card-table.component';
 
 //primeng
-import {TabViewModule} from 'primeng/primeng';
+import { TabViewModule } from 'primeng/tabview';
+import { TabviewToolsComponent } from './tabview-tools/tabview-tools.component';
 
 @NgModule({
   imports:      [
     BrowserModule, FormsModule,
     ChartsModule,
     Ng2SmartTableModule,
-    
+    /* angular/material */
     BrowserAnimationsModule,
     MatCardModule,
-
+    /* primeng */
     TabViewModule
     ],
   declarations: [ AppComponent,
@@ -47,12 +48,12 @@ import {TabViewModule} from 'primeng/primeng';
     ChartToolsComponent,
     ChartAssigneesComponent,
     TableDetailsComponent,
-    
+    /* angular/material */
     CardToolsComponent,
     CardDaysComponent,
     CardAssigneesComponent,
     CardTableComponent,
-
+    /* primeng */
     TabviewToolsComponent
     ],
   bootstrap:    [ AppComponent ]
