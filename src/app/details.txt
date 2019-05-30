@@ -1,0 +1,16 @@
+Dashboard | SideNav | GridList
+
+I. GridList:
+1. card-assignees
+2. card-days
+3. card-tools
+4. card-table
+
+[           DASHBOARD                 ]
+S  [card-time] [card-tools]
+I  [       card-assignees       ]
+D  [             card-table          ]
+E
+N
+A
+V

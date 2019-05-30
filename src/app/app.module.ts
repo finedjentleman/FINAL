@@ -19,6 +19,7 @@ import { Ng2SmartTableModule } from 'ng2-smart-table';
 //materials
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {MatCardModule} from '@angular/material/card';
+import {MatGridListModule} from '@angular/material/grid-list';
 
 //card components
 import { CardToolsComponent } from './card-tools/card-tools.component';
@@ -32,6 +33,9 @@ import { TabviewToolsComponent } from './tabview-tools/tabview-tools.component';
 import { TabviewDaysComponent } from './tabview-days/tabview-days.component';
 import { TabviewAssigneesComponent } from './tabview-assignees/tabview-assignees.component';
 
+//grid
+import { GridlistDisplayComponent } from './gridlist-display/gridlist-display.component';
+
 @NgModule({
   imports:      [
     BrowserModule, FormsModule,
@@ -40,6 +44,7 @@ import { TabviewAssigneesComponent } from './tabview-assignees/tabview-assignees
     /* angular/material */
     BrowserAnimationsModule,
     MatCardModule,
+    MatGridListModule,
     /* primeng */
     TabViewModule
     ],
@@ -57,7 +62,9 @@ import { TabviewAssigneesComponent } from './tabview-assignees/tabview-assignees
     /* primeng */
     TabviewToolsComponent,
     TabviewDaysComponent,
-    TabviewAssigneesComponent
+    TabviewAssigneesComponent,
+    /*GRID*/
+    GridlistDisplayComponent
     ],
   bootstrap:    [ AppComponent ]
 })
