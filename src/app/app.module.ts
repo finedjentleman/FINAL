@@ -27,7 +27,8 @@ import { CardDaysComponent } from './card-days/card-days.component';
 import { CardAssigneesComponent } from './card-assignees/card-assignees.component';
 import { CardTableComponent } from './card-table/card-table.component';
 
-
+//primeng
+import {TabViewModule} from 'primeng/tabview';
 
 @NgModule({
   imports:      [
@@ -36,7 +37,9 @@ import { CardTableComponent } from './card-table/card-table.component';
     Ng2SmartTableModule,
     
     BrowserAnimationsModule,
-    MatCardModule
+    MatCardModule,
+
+    TabViewModule
     ],
   declarations: [ AppComponent,
     JsonReaderComponent,
