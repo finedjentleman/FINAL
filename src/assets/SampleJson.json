@@ -2,40 +2,40 @@
   {
     "incident": "INC512",
     "assignee": "Spike",
-    "open": "",
-    "closed": "",
+    "open": "2019-04-23T18:25:43.511Z",
+    "closed": "2019-04-29T19:25:43.511Z",
     "sme": "Jim",
     "tool":"Paint"
   },
   {
     "incident": "INC007",
     "assignee": "Tom",
-    "open": "",
-    "closed": "",
+    "open": "2019-03-23T18:25:43.511Z",
+    "closed": "NULL",
     "sme": "Dom",
     "tool":"MSWord"
   },
   {
     "incident": "REQ810",
     "assignee": "Jerry",
-    "open": "",
-    "closed": "",
+    "open": "2019-02-04T10:25:43.511Z",
+    "closed": "2019-05-23T20:25:43.511Z",
     "sme": "HanSolo",
     "tool":"Ubuntu"
   },
   {
     "incident": "INC007",
     "assignee": "Muscles",
-    "open": "",
-    "closed": "",
+    "open": "2019-04-23T11:25:43.511Z",
+    "closed": "2019-05-18T13:25:43.511Z",
     "sme": "TwoShoes",
     "tool":"Windows"
   },
   {
     "incident": "REQ221",
     "assignee": "Tom",
-    "open": "",
-    "closed": "",
+    "open": "2019-03-23T18:25:43.511Z",
+    "closed": "2019-03-23T18:25:43.511Z",
     "sme": "Oggy",
     "tool":"Paint"
   }

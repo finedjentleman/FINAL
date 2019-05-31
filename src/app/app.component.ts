@@ -20,6 +20,7 @@ type Post = {
   templateUrl: './app.component.html',
   styleUrls: [ './app.component.css' ]
 })
+
 export class AppComponent  {
   title = "App";
 
@@ -59,50 +60,80 @@ export class AppComponent  {
         */
         
         let ToolsDict: any = {};//holds total
-        let ToolsDictInc: any = {};//holds INC
-        let ToolsDictReq: any = {};//hold REQ
-
-        //for tools
-        for(let i = 0; i < this.A.length; i++){
-          let resource = data[i];
-          console.log("Current tool: " + resource["tool"]);
-          
-          if(ToolsDict[resource["tool"]] == null){
-            console.log(ToolsDict[resource["tool"]]+" is null");
-            ToolsDict[resource["tool"]] = [];
-            ToolsDict[resource["tool"]].push(resource["incident"]);
-          }
-          else{
-            console.log("pushing: " + resource["incident"]);
-            ToolsDict[resource["tool"]].push(resource["incident"]);
-            console.log("pushed: " + resource["incident"]);
-          }
-        }
-
-        console.log("Tools dict: " + ToolsDict);
-        
-        
-
         let DaysDict: any = {};
         let AssigneesDict: any = {};
         
+        //for tools
+        for(let i = 0; i < this.A.length; i++){
+          
+          let resource = data[i];
+          let tool = resource["tool"];
+          let incident = resource["incident"];
 
-        //iterate, and if the entry is in the map, add the 
+          if(ToolsDict[tool] == null){
+            console.log(ToolsDict[tool]+" is null");
+            ToolsDict[tool] = [];
+            ToolsDict[tool].push(incident);
+          }
+          else{
+            console.log("pushing: " + incident);
+            ToolsDict[tool].push(incident);
+            console.log("pushed: " + incident);
+          }
+        }
 
+        //for days
+        for(let i = 0; i < this.A.length; i++){
+          let resource = data[i];
+          let open = resource["open"];
+          let closed = resource["closed"];
+          let incident = resource["incident"];
+          
+          let time: number; // holds total time elapsed
+          
+          DaysDict[0] = [];
+          DaysDict[1] = [];
+          DaysDict[2] = [];
+          DaysDict[3] = [];
 
+          if(DaysDict[closed] == "NULL"){
+            time = (new Date().getTime() - new Date(open).getTime());//in milliseconds
+            DaysDict[resource["open"]] = [];
+            DaysDict[resource["open"]].push(resource["incident"]);
+          }
+          else{
+            time = (new Date(closed).getTime() - new Date(open).getTime());//in milliseconds
+          }
 
+          if(time < 5 * 86400000) DaysDict[0].push(incident);
+          else if(time < 15 * 86400000) DaysDict[1].push(incident);
+          else if(time < 30 * 86400000) DaysDict[2].push(incident);
+          else DaysDict[3].push(incident);
+        }
+
+        //for assignees
+        for(let i = 0; i < this.A.length; i++){
+          let resource = data[i];
+          let incident = resource["incident"];
+          let assignee = resource["assignee"];
+
+          if(ToolsDict[assignee] == null){
+            console.log(ToolsDict[assignee]+" is null");
+            ToolsDict[assignee] = [];
+            ToolsDict[assignee].push(incident);
+          }
+          else{
+            console.log("pushing: " + incident);
+            ToolsDict[assignee].push(incident);
+            console.log("pushed: " + incident);
+          }
+        }
+        
+        
 
 
       }
     );
-
-
-    
+ 
   }
-  /*
-  constructor(http:HttpClient) {
-    this.http.get('../../assets/SampleJson.json')
-                 .subscribe(data => console.log(data));
-    );
-  */
 }
